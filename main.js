@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Block 126 Ads
 // @namespace    https://scheimong.net/
-// @version      0.1.4
+// @version      0.1.5
 // @updateURL    https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @downloadURL  https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @description  Removes all ads (at least attempt to) from 126 mail
@@ -14,7 +14,7 @@
 (function() {
     'use strict';
 
-    var remove_by_class = ["gWel-recommend", "gWel-promt", "rd0", "Ab0", "qJ0", "xd0", "tN0", "mailApp"];
+    var remove_by_class = ["gWel-recommend", "gWel-promt", "rd0", "Ab0", "qJ0", "xd0", "tN0", "mailApp", "xH1", "tA1"];
     var remove_by_title = ["网易严选", "携程旅行"];
     var remove_by_selector = [];
 
