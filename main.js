@@ -6,7 +6,7 @@
 // @downloadURL  https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @description  Removes all ads (at least attempt to) from 126 mail
 // @author       Scheimong
-// @match        https://mail.126.com/*
+// @match        https://*.126.com/*
 // @run-at       document-body
 // @grant        none
 // ==/UserScript==
