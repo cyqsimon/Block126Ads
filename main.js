@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Block 126 Ads
 // @namespace    https://scheimong.net/
-// @version      0.1.8
+// @version      0.1.9
 // @updateURL    https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @downloadURL  https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @description  Removes all ads (at least attempt to) from 126 mail
@@ -44,7 +44,7 @@
         else { // Remove
             for(let e of eList) {
                 e.remove();
-                console.log(`Known ad removed! ${e}`);
+                console.log("Known ad removed!", e);
             }
             return true;
         }
