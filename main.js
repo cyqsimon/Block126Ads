@@ -11,12 +11,12 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-    'use strict';
+"use strict";
 
-    var remove_by_class = ["gWel-recommend", "gWel-promt", "mailgg", "rd0", "Ab0", "qJ0", "xd0", "tN0", "mailApp", "xH1", "tA1"];
-    var remove_by_title = ["网易严选", "携程旅行"];
-    var remove_by_selector = [];
+(function() {
+    const remove_by_class = ["gWel-recommend", "gWel-promt", "mailgg", "rd0", "Ab0", "qJ0", "xd0", "tN0", "mailApp", "xH1", "tA1"];
+    const remove_by_title = ["网易严选", "携程旅行"];
+    const remove_by_selector = [];
 
     const mutOb = new MutationObserver((mutList, ob) => {
         for(let c of remove_by_class) {
