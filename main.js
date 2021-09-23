@@ -34,18 +34,10 @@
     ];
 
     const mutOb = new MutationObserver((mutList, ob) => {
-        for (let s of removeList) {
-            let eList = document.querySelectorAll(s);
-            removeAll(eList);
-        }
+        let allSelected = removeList.flatMap((s) => Array.from(document.querySelectorAll(s)));
+        let allSelectedUnique = new Set(allSelected);
+        allSelectedUnique.forEach((el) => el.remove());
+        console.log(`${allSelectedUnique} known ad(s) removed!`);
     });
-
     mutOb.observe(document, { childList: true, subtree: true });
-
-    function removeAll(eList) {
-        for (let e of eList) {
-            e.remove();
-            console.log("Known ad removed!", e);
-        }
-    }
 })();
