@@ -27,7 +27,6 @@
         ".mailApp",
         ".xH1",
         ".tA1",
-        ".rJ0",
         // title
         "[title=网易严选]",
         "[title=携程旅行]",
