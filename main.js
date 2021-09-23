@@ -36,8 +36,11 @@
     const mutOb = new MutationObserver((mutList, ob) => {
         let allSelected = removeList.flatMap((s) => Array.from(document.querySelectorAll(s)));
         let allSelectedUnique = new Set(allSelected);
-        allSelectedUnique.forEach((el) => el.remove());
-        console.log(`${allSelectedUnique} known ad(s) removed!`);
+
+        if (allSelectedUnique.size != 0) {
+            allSelectedUnique.forEach((el) => el.remove());
+            console.log(`${allSelectedUnique.size} known ad(s) removed!`);
+        }
     });
     mutOb.observe(document, { childList: true, subtree: true });
 })();
