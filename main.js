@@ -27,6 +27,8 @@
         ".mailApp",
         ".xH1",
         ".tA1",
+        // id
+        "#_mail_component_128_128",
         // title
         "[title=网易严选]",
         "[title=携程旅行]",
