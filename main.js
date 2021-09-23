@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Block 126 Ads
 // @namespace    https://scheimong.net/
-// @version      0.1.12
+// @version      0.1.13
 // @updateURL    https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @downloadURL  https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @description  Removes all ads (at least attempt to) from 126 mail
