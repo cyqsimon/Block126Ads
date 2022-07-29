@@ -36,12 +36,24 @@
     ];
 
     const mutOb = new MutationObserver((mutList, ob) => {
-        let allSelected = removeList.flatMap((s) => Array.from(document.querySelectorAll(s)));
-        let allSelectedUnique = new Set(allSelected);
+        let allSelections = removeList.flatMap((s) => Array.from(document.querySelectorAll(s)).map((el) => [s, el]));
+        let uniqueElements = new Set(allSelections.map(([s, el]) => el));
 
-        if (allSelectedUnique.size != 0) {
-            allSelectedUnique.forEach((el) => el.remove());
-            console.log(`${allSelectedUnique.size} known ad(s) removed!`);
+        if (uniqueElements.size != 0) {
+            let elementSelectorTable = Array
+                .from(uniqueElements)
+                .flatMap((el0) => {
+                    let subTable = allSelections
+                        .filter(([s, el1]) => el0 === el1)
+                        .map(([s, el1]) => ({selectedBy: s}));
+                    subTable[0].element = el0;
+                    return subTable;
+                });
+
+            uniqueElements.forEach(el => el.remove());
+
+            console.log(`${uniqueElements.size} known ad(s) removed!`);
+            console.table(elementSelectorTable, ["element", "selectedBy"]);
         }
     });
     mutOb.observe(document, { childList: true, subtree: true });
