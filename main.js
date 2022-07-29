@@ -16,23 +16,23 @@
 (function () {
     const removeList = [
         // class
-        ".gWel-recommend",
-        ".gWel-promt",
-        ".mailgg",
-        ".rd0",
         ".Ab0",
-        ".qJ0",
-        ".xd0",
-        ".tN0",
+        ".gWel-promt",
+        ".gWel-recommend",
         ".mailApp",
-        ".xH1",
+        ".mailgg",
+        ".qJ0",
+        ".rd0",
         ".tA1",
+        ".tN0",
+        ".xd0",
+        ".xH1",
         // id
         "#_mail_component_128_128",
         // title
+        "[title=半个电台]",
         "[title=网易严选]",
         "[title=携程旅行]",
-        "[title=半个电台]",
     ];
 
     const mutOb = new MutationObserver((mutList, ob) => {
