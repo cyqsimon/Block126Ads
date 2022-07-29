@@ -30,9 +30,7 @@
         // id
         "#_mail_component_128_128",
         // title
-        "[title=半个电台]",
-        "[title=网易严选]",
-        "[title=携程旅行]",
+        "[title=企业邮箱]",
     ];
 
     const mutOb = new MutationObserver((mutList, ob) => {
