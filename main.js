@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Block 126 Ads
 // @namespace    https://scheimong.net/
-// @version      0.2.0
+// @version      0.2.1
 // @updateURL    https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @downloadURL  https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @description  Removes all ads (at least attempt to) from 126 mail
@@ -22,7 +22,9 @@
         ".mailApp",
         ".mailgg",
         ".qJ0",
+        ".qz2",
         ".rd0",
+        ".sn1",
         ".tA1",
         ".tN0",
         ".xd0",
