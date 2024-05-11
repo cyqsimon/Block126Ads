@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Block 126 Ads
 // @namespace    https://scheimong.net/
-// @version      0.2.2
+// @version      0.2.3
 // @updateURL    https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @downloadURL  https://raw.githubusercontent.com/cyqsimon/Block126Ads/master/main.js
 // @description  Removes all ads (at least attempt to) from 126 mail
@@ -32,6 +32,7 @@
         // id
         "#_mail_component_51_51",
         "#_mail_component_128_128",
+        "#_mail_tabitem_9_2665",
         // title
         "[title=企业邮箱]",
     ];
